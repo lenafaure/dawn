@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "kaching_bundles_app_block_RA4yGR": {
-          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -45,6 +39,12 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "kaching_bundles_app_block_RA4yGR": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{ product }}"
           }
         },
         "quantity_selector": {
@@ -106,12 +106,12 @@
         }
       },
       "block_order": [
-        "kaching_bundles_app_block_RA4yGR",
         "vendor",
         "title",
         "caption",
         "price",
         "variant_picker",
+        "kaching_bundles_app_block_RA4yGR",
         "quantity_selector",
         "buy_buttons",
         "description",
