@@ -318,7 +318,6 @@
                 </button>
               </modal-opener>
               <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
-                  <kaching-bundle product-id="{{ card_product.id }}"></kaching-bundle>
 
                 <div
                   role="dialog"
@@ -335,6 +334,8 @@
                   >
                     {{- 'icon-close.svg' | inline_asset_content -}}
                   </button>
+                  <kaching-bundle product-id="{{ card_product.id }}"></kaching-bundle>
+
                   <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info"></div>
                 </div>
               </quick-add-modal>
