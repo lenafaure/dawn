@@ -334,6 +334,7 @@
                     {{- 'icon-close.svg' | inline_asset_content -}}
                   </button>
                   <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info"></div>
+                  <kaching-bundle product-id="{{ product.id }}"></kaching-bundle>
                 </div>
               </quick-add-modal>
             {%- else -%}
